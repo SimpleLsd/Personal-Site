@@ -123,3 +123,10 @@
     top: 50%;
     transform: translate(-50%,-50%);
 }
+
+
+/* Welcome Words */
+.welcomeWords{
+    font-family: "FZDaBiaoSong";
+    font-size: 66px;
+}

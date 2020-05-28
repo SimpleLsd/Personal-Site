@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+@font-face{
+    font-family: "FZDaBiaoSong";
+    src: url(../src/FZDBSJW.TTF);
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     height: 100%;
 }

@@ -3,21 +3,20 @@
     margin: 0 auto;
 }
 
-.main{
+.container {
     position: absolute;
     width: 100%;
     min-height: 100%;
     background-color: #f1f1f3;
 }
 
-
 .header {
     /* text-align: center; */
+    height: 80px;
     width: 90%;
     min-width: 960px;
     margin: 0 auto;
     overflow: hidden;
-    height: 100px;
     /* border-bottom: 1px solid #000; */
 }
 
@@ -25,7 +24,7 @@
     float: left;
     /* width: 60px;
     height: 60px; */
-    margin: 20px;
+    margin: 10px;
 }
 
 .header .logo a {
@@ -43,76 +42,74 @@
     display: table;
     text-align: center;
     width: max-content;
-    height: 100px;
+    height: 80px;
     margin: 0 auto;
     /* background-color: #dbdbdb; */
 }
-
-
 
 .header .nav ul li {
     float: left;
 }
 
-.header .nav ul li a{
+.header .nav ul li a {
     /* padding: 20px; */
     font-family: "Noto Sans SC", "微软雅黑";
     font-weight: 400;
-    line-height: 100px;
+    line-height: 80px;
     font-size: 16px;
     display: inline-block;
     width: 120px;
-    height: 100px;
+    height: 80px;
 }
 
-.header .nav ul li a span{
+.header .nav ul li a span {
     color: #666666;
     padding-bottom: 3px;
     border-bottom: 2px solid #00000000;
-	transition: all 100ms 0s ease-out;
-
-
+    transition: all 100ms 0s ease-out;
 }
 
-.header .nav ul li :hover span{
+.header .nav ul li :hover span {
     /* background-color: #000000; */
     color: #000000;
     border-bottom: 2px solid #000000;
-
 }
 
-.header .lang{
+.header .lang {
     text-align: center;
-    line-height: 100px;
+    line-height: 80px;
     font-family: "Noto Sans SC", "微软雅黑";
     font-weight: 500;
     /* background-color: #f1f1f1; */
     float: right;
     width: 100px;
-    height: 100px;
+    height: 80px;
 }
 
-.header .lang .cn{
+.header .lang .cn {
     color: #000000;
     display: inline-block;
 }
 
-.header .lang .slash{
+.header .lang .slash {
     color: #D8D8D8;
 }
 
-.header .lang .en{
+.header .lang .en {
     display: inline-block;
-    height: 100px;
+    height: 80px;
     width: auto;
     font-weight: 400;
     color: #D8D8D8;
 }
 
-.header .lang .en:hover span{
+.header .lang .en:hover span {
     color: #666666;
     transition: all 100ms 0s ease-out;
 }
+
+
+/* Background Sitting */
 
 .background {
     position: absolute;
@@ -121,12 +118,61 @@
     font-size: 32vmin;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 
-/* Welcome Words */
-.welcomeWords{
-    font-family: "FZDaBiaoSong";
-    font-size: 66px;
+/* Father Sitting */
+
+.main {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    bottom: 0px;
+    /* left: 0px; */
+    /* background-color: red; */
 }
+
+.mContent {
+    width: 60vmax;
+    height: 75vh;
+    z-index: 2;
+    position: absolute;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mLeft {
+    height: 600px;
+}
+
+.mLeft .boldLine {
+    float: left;
+    width: 80px;
+    height: 600px;
+}
+
+.mLeft .boldLine .shape {
+    position: absolute;
+    bottom: 20px;
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+}
+
+.mLeft .welcomeWords {
+    position: absolute;
+    bottom: 0px;
+    display: inline-block;
+    font-family: "FZXiaoBiaoSong";
+    font-size: 2.5vmax;
+    line-height: 3.5vmax;
+}
+
+
+/* Type test
+.mLeft .welcomeWords:hover {
+    font-family: "FZXiaoBiaoSong";
+} */

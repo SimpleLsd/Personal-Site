@@ -134,6 +134,7 @@
 }
 
 .mContent {
+    overflow: hidden;
     width: 60vmax;
     height: 75vh;
     z-index: 2;
@@ -145,18 +146,21 @@
 }
 
 .mLeft {
-    height: 600px;
+    height: 75vh;
+    width: 28vw;
+    float: left;
 }
 
 .mLeft .boldLine {
     float: left;
-    width: 80px;
-    height: 600px;
+    width: 60px;
+    margin-right: 20px;
+    height: 75vh;
 }
 
 .mLeft .boldLine .shape {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     width: 60px;
     height: 4px;
     background-color: #000;
@@ -167,8 +171,8 @@
     bottom: 0px;
     display: inline-block;
     font-family: "FZXiaoBiaoSong";
-    font-size: 2.5vmax;
-    line-height: 3.5vmax;
+    font-size: 2em;
+    line-height: 1.5em;
 }
 
 
@@ -176,3 +180,42 @@
 .mLeft .welcomeWords:hover {
     font-family: "FZXiaoBiaoSong";
 } */
+
+.mRight {
+    float: right;
+    height: 75vh;
+    width: 30vw;
+    background-color: #00000015;
+}
+
+.mRight .coverPic {
+    width: calc(100% - 80px);
+    height: calc(100% - 60px);
+    background-color: yellow;
+}
+
+.mRight .coverPic .coverPicContent {
+    width: 100%;
+    height: 100%;
+    background-color: #00000020;
+}
+
+.mRight .coverPicButton {
+    height: 60px;
+    background-color: #00000030;
+    /* background-color: red; */
+}
+
+#leftButton {
+    background-color: red;
+    float: right;
+    width: 80px;
+    height: 60px;
+}
+
+#rightButton {
+    background-color: red;
+    float: right;
+    width: 80px;
+    height: 60px;
+}

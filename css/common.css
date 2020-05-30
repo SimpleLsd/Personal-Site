@@ -175,12 +175,6 @@
     line-height: 1.5em;
 }
 
-
-/* Type test
-.mLeft .welcomeWords:hover {
-    font-family: "FZXiaoBiaoSong";
-} */
-
 .mRight {
     float: right;
     height: 75vh;
@@ -211,8 +205,6 @@
     height: 60px;
     width: 160px;
     float: right;
-    /* background-color: #00000030; */
-    /* background-color: red; */
 }
 
 #leftButton,
@@ -237,6 +229,4 @@
 #rightButtonC {
     width: 80;
     height: 60;
-    /* border: 1px solid #000000;
-    background-color: #fff; */
 }

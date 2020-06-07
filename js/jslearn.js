@@ -1,10 +1,24 @@
-var arr = new Array();
+window.onload = function(){
+    //点击超链接删除信息
+
+    var allA = document.getElementsByTagName("a")
+
+    for(var i = 0 ; i<allA.length ; i++){
+        allA[i].onclick = function(){
+            var tr = this.parentNode.parentNode;
+            var text = tr.getElementsByTagName("td")[0].innerHTML;
+            
+            if(confirm("DELETE " + text + " ?"))
+                tr.remove()
+
+            // alert("hello")
+
+            return false;
+        }
+    }
 
 
-arr[0] = 10;
-arr[1] = 20;
-arr[2] = 30;
-arr[10] = 110;
-arr.unshift(1,2,3)
 
-console.log(arr);
+
+
+}

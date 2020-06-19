@@ -5,12 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="src/favicon128.ico">
-
+    <style>
+        #box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+        }
+        
+        #areaDiv {
+            width: 200px;
+            height: 150px;
+            background-color: #bfa;
+            margin-top: 10px;
+        }
+        
+        #showMsg {
+            width: 200px;
+            height: 30px;
+            background-color: #bfa;
+            margin-top: 10px;
+        }
+    </style>
     <title>Document</title>
 </head>
 
 <body>
-    <table class="employeeTable">
+    <table class="employeeTable" id="TABLE">
         <tr>
             <th>Name</th>
             <th>Email</th>
@@ -58,6 +78,14 @@
             </td>
         </tr>
     </table>
+
+    <div id="box1"></div>
+    <button id="btn01">点我一下</button>
+    <button id="btn02">再点我一下</button>
+
+    <div id="areaDiv"></div>
+    <div id="showMsg"></div>
+
     <script type="text/javascript" src="js/jslearn.js"></script>
 </body>
 

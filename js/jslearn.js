@@ -1,5 +1,32 @@
 window.onload = function() {
 
+    //设置imglist宽度
+    var imgList = document.getElementById("imgList")
+
+    var imgArr = document.getElementsByTagName("img")
+    imgList.style.width = imgArr.length * 520 + "px";
+
+    var navDiv = document.getElementById("navDiv")
+    navDiv.style.left = `${255 - navDiv.clientWidth / 2}px`;
+
+    var allAA = document.querySelectorAll("#navDiv a")
+    var index = 0;
+
+    allAA[index].style.backgroundColor = "#000"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     function delA() {
         var tr = this.parentNode.parentNode;
         var text = tr.getElementsByTagName("td")[0].innerHTML;
@@ -66,8 +93,28 @@ window.onload = function() {
     var aeraDiv = document.getElementById("areaDiv")
     var showMsg = document.getElementById("showMsg")
 
-    aeraDiv.onmousemove = function() {
-        alert("wodongle")
+    aeraDiv.onmousemove = function(event) {
+        // alert("wodongle")
+        var x = window.event.clientX;
+        var y = window.event.clientY;
+        // alert(x+","+y)
+        showMsg.innerHTML = "&nbspx = "+ x + "  , y = " + y ;
     }
+    /*
+    var box3 = document.getElementById("box3");
+
+    document.onmousemove = function(event){
+
+        var left = event.pageX;
+        var top = event.pageY;
+
+        box3.style.left = left + "px";
+        box3.style.top = top + "px";
+
+    }
+    */
+
+
+    
 
 }

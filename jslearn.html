@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="src/favicon128.ico">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-
-        #outer{
+        
+        #outer {
             width: 520px;
             height: 333px;
             margin: 10px auto;
@@ -20,28 +20,29 @@
             overflow: hidden;
             position: relative;
         }
-
-        #imgList{
+        
+        #imgList {
             list-style: none;
             width: 2600px;
             position: absolute;
-            left: -520px;
+            left: 0px;
+            transition: all 300ms 0s ease-out;
         }
-
-        #imgList li{
+        
+        #imgList li {
             display: block;
             float: left;
             margin: 0 10px;
         }
-
-        #navDiv{
+        
+        #navDiv {
             position: absolute;
             bottom: 20px;
             left: 200px;
             /* display: block; */
         }
-
-        #navDiv a{
+        
+        #navDiv a {
             float: left;
             margin: 0 5px;
             width: 15px;
@@ -49,12 +50,12 @@
             background-color: #fff;
             opacity: 0.5;
         }
-
+        
         #box1 {
             width: 200px;
             height: 200px;
             background-color: #bfa;
-        } 
+        }
         
         #box3 {
             position: absolute;
@@ -77,6 +78,7 @@
             background-color: #bfa;
             margin-top: 10px;
         }
+        
         body {
             height: 2000px;
         }
@@ -87,19 +89,19 @@
 <body>
     <div id="outer">
         <ul id="imgList">
-            <li><img src="src/1.jpg" ></li>
-            <li><img src="src/2.jpg" ></li>
-            <li><img src="src/3.jpg" ></li>
-            <li><img src="src/4.jpg" ></li>
-            <li><img src="src/5.jpg" ></li>
-            <li><img src="src/5.jpg" ></li>
+            <li><img src="src/1.jpg"></li>
+            <li><img src="src/2.jpg"></li>
+            <li><img src="src/3.jpg"></li>
+            <li><img src="src/4.jpg"></li>
+            <li><img src="src/5.jpg"></li>
+            <li><img src="src/1.jpg"></li>
         </ul>
         <div id="navDiv">
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
         </div>
     </div>
 

@@ -12,7 +12,42 @@ window.onload = function() {
     var allAA = document.querySelectorAll("#navDiv a")
     var index = 0;
 
+
+
     allAA[index].style.backgroundColor = "#000"
+
+    for (var i = 0; i < allAA.length; i++) {
+
+        allAA[i].num = i
+
+        allAA[i].onclick = function() {
+            imgList.style.left = -520 * this.num + "px"
+            for (var i = 0; i < allAA.length; i++) {
+                allAA[i].style.backgroundColor = "#fff"
+            }
+
+            allAA[this.num].style.backgroundColor = "#000"
+
+            // console.log(this.num)
+        }
+    }
+
+    var leftIndex = 0;
+
+    setInterval(function() {
+        console.log(leftIndex % 5)
+
+
+        if (leftIndex % 5 == 4) {
+            imgList.style.left = leftIndex % 5 * -520 + "px"
+
+        } else {
+            imgList.style.left = leftIndex % 5 * -520 + "px"
+        }
+        leftIndex += 1;
+
+        // console.log("66")
+    }, 1000)
 
 
 
@@ -40,7 +75,7 @@ window.onload = function() {
     }
     //点击超链接删除信息
 
-    var allA = document.getElementsByTagName("a")
+    var allA = document.querySelectorAll("table a")
 
     for (var i = 0; i < allA.length; i++) {
         allA[i].onclick = delA
@@ -94,27 +129,27 @@ window.onload = function() {
     var showMsg = document.getElementById("showMsg")
 
     aeraDiv.onmousemove = function(event) {
-        // alert("wodongle")
-        var x = window.event.clientX;
-        var y = window.event.clientY;
-        // alert(x+","+y)
-        showMsg.innerHTML = "&nbspx = "+ x + "  , y = " + y ;
-    }
-    /*
-    var box3 = document.getElementById("box3");
+            // alert("wodongle")
+            var x = window.event.clientX;
+            var y = window.event.clientY;
+            // alert(x+","+y)
+            showMsg.innerHTML = "&nbspx = " + x + "  , y = " + y;
+        }
+        /*
+        var box3 = document.getElementById("box3");
 
-    document.onmousemove = function(event){
+        document.onmousemove = function(event){
 
-        var left = event.pageX;
-        var top = event.pageY;
+            var left = event.pageX;
+            var top = event.pageY;
 
-        box3.style.left = left + "px";
-        box3.style.top = top + "px";
+            box3.style.left = left + "px";
+            box3.style.top = top + "px";
 
-    }
-    */
+        }
+        */
 
 
-    
+
 
 }

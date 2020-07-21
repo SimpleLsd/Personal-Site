@@ -8,8 +8,19 @@
 </head>
 
 <body>
-    <div id="app">
-        {{ message }}
+    <div id="appList">
+        <ul>
+            <li v-for="item in movies">{{item}}</li>
+        </ul>
+    </div>
+
+    <div id="appCounter">
+        <h2>Counter: {{counter}}</h2>
+        <!-- <button v-on:click="counter++">+</button> -->
+        <!-- <button v-on:click="counter--">-</button> -->
+        <button v-on:click="add">+</button>
+        <button @click="sub">-</button>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
